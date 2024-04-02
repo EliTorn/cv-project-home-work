@@ -1,4 +1,3 @@
-import cv2
 import face_recognition
 
 reference_image = face_recognition.load_image_file("person.jpeg")
@@ -19,3 +18,9 @@ for id_face_encoding in id_face_encodings:
     else:
         print("Verification failed: The ID photo does not match the reference photo.")
 
+
+# explain on this code
+#
+# we do in the library of  face_recognition
+#
+# we find and check in 2 pictures if they is the same man
