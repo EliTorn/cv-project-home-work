@@ -18,14 +18,7 @@ def show_gradients(img, img_gray, grad_x, grad_y, grad, grad_orient):
     ax[0, 0].set_title('Original Image')
     ax[0, 1].imshow(img_gray, cmap='gray')
     ax[0, 1].set_title('Gray Image')
-    ax[1, 0].imshow(grad_x, cmap='gray')
-    ax[1, 0].set_title('Gradient in direction X')
-    ax[1, 1].imshow(grad_y, cmap='gray')
-    ax[1, 1].set_title('Gradient in direction Y')
-    ax[2, 0].imshow(grad, cmap='jet')
-    ax[2, 0].set_title('Magnitude of the Gradient')
-    ax[2, 1].imshow(grad_orient, cmap='jet')
-    ax[2, 1].set_title('Orientation of the Gradient')
+
     plt.show()
 
 
